@@ -4,14 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Presentation</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="lib/css/solarized-light.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,8 +25,39 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section class="intro-slide" data-background="#fff" data-markdown>
+					<textarea data-template>
+						# Heading
+						## Sub-heading
+						### Author Name
+						cats
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Page title
+				
+						A paragraph with some text and a [link](http://hakim.se).
+					</textarea>
+				</section>
+				<section>
+					<pre><code class="hljs" data-line-numbers="4,8-11">
+import React, { useState } from 'react';
+
+function Example() {
+const [count, setCount] = useState(0);
+
+return (
+	<div>
+	<p>You clicked {count} times</p>
+	<button onClick={() => setCount(count + 1)}>
+		Click me
+	</button>
+	</div>
+);
+						}
+					</code></pre>
+				</section>
 			</div>
 		</div>
 

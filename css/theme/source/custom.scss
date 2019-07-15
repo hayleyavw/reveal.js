@@ -1,0 +1,17 @@
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline|Londrina+Solid|Roboto');
+
+// Override theme settings (see ../template/settings.scss)
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
